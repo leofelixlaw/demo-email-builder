@@ -23,7 +23,7 @@ module.exports = (env = {}) => {
     entry: './src',
     output: {
         filename: `./dist/${name}.min.js`,
-        library: name,
+        library: 'grapesjs-mjml', // name,
         libraryTarget: 'umd',
     },
     module: {
