@@ -1,6 +1,6 @@
 {
     "name": "demo-email-builder",
-    "version": "1.0.1",
+    "version": "1.0.5",
     "description": "MJML Componenets integration",
     "main": "dist/grapesjs-mjml.min.js",
     "scripts": {
@@ -13,13 +13,23 @@
         "type": "git",
         "url": "git+https://github.com/leofelixlaw/demo-email-builder.git"
     },
+    "babel": {
+        "presets": [
+            "env"
+        ],
+        "plugins": [
+            "transform-object-rest-spread"
+        ]
+    },
     "dependencies": {
+        "fs": "0.0.1-security",
+        "grapesjs": "^0.14.62",
         "mjml": "^4.3.1",
         "mjml4-in-browser": "^1.1.1"
     },
     "devDependencies": {
         "babel-core": "^6.26.3",
-        "babel-loader": "^7.1.2",
+        "babel-loader": "^7.1.5",
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-preset-env": "^1.7.0",
         "eslint": "^4.1.1",
