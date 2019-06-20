@@ -75,9 +75,9 @@ export default (editor, opt = {}) => {
   bm.add('mj-social-group', {
     label: 'Group Social',
     content: `<mj-social font-size="12px" icon-size="24px" border-radius="12px" mode="horizontal">
-        <mj-social-element src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-facebook-48.png" href="https://www.facebook.com/tutor.platform.global/?ref=br_rs"></mj-social-element>
-        <mj-social-element src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png" href="https://www.tutorbot.io/"></mj-social-element>
-        <mj-social-element src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-linkedin-48.png" href="https://www.linkedin.com/company/tutor-platform/"></mj-social-element>
+        <mj-social-element src="https://storage.googleapis.com/postemail/icons/facebook.svg" href="#"></mj-social-element>
+        <mj-social-element src="https://storage.googleapis.com/postemail/icons/twitter.svg" href="#"></mj-social-element>
+        <mj-social-element src="https://storage.googleapis.com/postemail/icons/linkedin.svg" href="#"></mj-social-element>
       </mj-social>`,
     attributes: { class: 'fa fa-share-alt' },
     ...allBlocks,
@@ -110,11 +110,34 @@ export default (editor, opt = {}) => {
     ...contentBlocks,
   });
 
-  bm.add('mj-img-content', {
-    label: '<div> <image src="https://storage.googleapis.com/postemail/builder-blocks-icons/img-content.jpg" style="width: 100%" /> </div>',
-    content: '<mj-section padding="0 20px" background-color="#FFFFFF"> <mj-column width="50%" background-color="#FFFFFF"> <mj-image padding="0" src="https://storage.googleapis.com/postemail/img/4.jpg" alt="" align="center" border="none"></mj-image> </mj-column> <mj-column width="50%"> <mj-text font-size="17px" color="#444" line-height="normal" align="center" padding="0 20px">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Lorem Ipsum Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus Lorem Ipsum</mj-text> </mj-column> </mj-section>',
+  bm.add('mj-content', {
+    label: '<div> <image src="https://storage.googleapis.com/postemail/builder-blocks-icons/content.jpg" style="width: 100%" /> </div>',
+    content: '<mj-section background-color="#ffffff" padding="20px"> <mj-column width="100%"> <mj-text padding="20px 0" font-size="15px" line-height="22px"> Hi {firstname} {lastname}, </mj-text> <mj-text padding="0 0 20px" font-size="15px" line-height="22px"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia a assumenda nulla in quisquam optio quibusdam fugiat perspiciatis nobis, ad tempora culpa porro labore. </mj-text> <mj-text padding="0" font-size="15px" line-height="22px"> Wishing you a great trip. </mj-text></mj-column> </mj-section>',
     ...contentBlocks,
   });
 
+  bm.add('mj-img-content', {
+    label: '<div> <image src="https://storage.googleapis.com/postemail/builder-blocks-icons/img-content.jpg" style="width: 100%" /> </div>',
+    content: '<mj-section padding="20px" background-color="#FFFFFF"> <mj-column width="50%"> <mj-image padding="0" src="https://storage.googleapis.com/postemail/img/4.jpg" alt="" align="center" border="none"></mj-image> </mj-column> <mj-column width="50%" padding="0"> <mj-text font-size="17px" font-weight="bold" padding="20px">Aliquam lorem ante</mj-text> <mj-text font-size="15px" line-height="22px" color="#444" padding="0 20px 10px">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut</mj-text> <mj-button padding="0 20px 10px" background-color="#1B6FFF" align="left" color="#ffffff" font-weight="bold" href="#"> Book now </mj-button> </mj-column> </mj-section>',
+    ...contentBlocks,
+  });
+
+  bm.add('mj-content-cards', {
+    label: '<div> <image src="https://storage.googleapis.com/postemail/builder-blocks-icons/content-cards.jpg" style="width: 100%" /> </div>',
+    content: '<mj-section background-color="#ffffff" padding="20px"> <mj-column width="50%" padding="10px"> <mj-image src="https://storage.googleapis.com/postemail/img/1.jpg" alt="img" padding="0" href="#"></mj-image> <mj-text container-background-color="#F8F5F5" font-size="17px" font-weight="bold" padding="20px">Aliquam lorem ante</mj-text> <mj-text container-background-color="#F8F5F5" font-size="15px" line-height="22px" color="#444" padding="0 20px 10px">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut</mj-text> <mj-button container-background-color="#F8F5F5" padding="0 20px 20px" background-color="#1B6FFF" align="left" color="#ffffff" font-weight="bold" href="#"> Book now </mj-button> </mj-column> <mj-column width="50%" padding="10px"> <mj-image src="https://storage.googleapis.com/postemail/img/2.jpg" alt="img" padding="0" href="#"></mj-image> <mj-text container-background-color="#F8F5F5" font-size="17px" font-weight="bold" padding="20px">Aliquam lorem ante</mj-text> <mj-text container-background-color="#F8F5F5" font-size="15px" line-height="22px" color="#444" padding="0 20px 10px">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut</mj-text> <mj-button container-background-color="#F8F5F5" padding="0 20px 20px" background-color="#1B6FFF" align="left" color="#ffffff" font-weight="bold" href="#"> Book now </mj-button> </mj-column> </mj-section>',
+    ...contentBlocks,
+  });
+
+  bm.add('mj-content-both', {
+    label: '<div> <image src="https://storage.googleapis.com/postemail/builder-blocks-icons/content-both.jpg" style="width: 100%" /> </div>',
+    content: '<mj-section padding="20px" background-color="#FFFFFF"> <mj-column width="50%" padding="0"> <mj-text font-size="17px" font-weight="bold" padding="20px">Aliquam lorem ante</mj-text> <mj-text font-size="15px" line-height="22px" color="#444" padding="0 20px 10px">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut</mj-text> <mj-button padding="0 20px 10px" background-color="#1B6FFF" align="left" color="#ffffff" font-weight="bold" href="#"> Book now </mj-button> </mj-column> <mj-column width="50%" padding="0"> <mj-text font-size="17px" font-weight="bold" padding="20px">Aliquam lorem ante</mj-text> <mj-text font-size="15px" line-height="22px" color="#444" padding="0 20px 10px">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut</mj-text> <mj-button padding="0 20px 10px" background-color="#1B6FFF" align="left" color="#ffffff" font-weight="bold" href="#"> Book now </mj-button> </mj-column> </mj-section>',
+    ...contentBlocks,
+  });
+
+  bm.add('mj-footer', {
+    label: '<div> <image src="https://storage.googleapis.com/postemail/builder-blocks-icons/footer.jpg" style="width: 100%" /> </div>',
+    content: '<mj-section background-color="#ffffff" padding="20px"> <mj-column width="100%"> <mj-social font-size="40px" icon-size="40px" border-radius="12px" mode="horizontal"> <mj-social-element src="https://storage.googleapis.com/postemail/icons/facebook.svg" href="#"></mj-social-element> <mj-social-element src="https://storage.googleapis.com/postemail/icons/twitter.svg" href="#"></mj-social-element> <mj-social-element src="https://storage.googleapis.com/postemail/icons/linkedin.svg" href="#"></mj-social-element> </mj-social> </mj-column> <mj-column width="100%"> <mj-text padding="0 0 20px" align="center" font-size="15px" line-height="22px"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia a assumenda nulla in quisquam optio quibusdam fugiat perspiciatis nobis, ad tempora culpa porro labore. </mj-text> </mj-column> </mj-section>',
+    ...contentBlocks,
+  });
 
 }
