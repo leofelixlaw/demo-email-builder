@@ -20,7 +20,7 @@ module.exports = (env = {}) => {
   }
 
   return {
-    entry: './src',
+    entry: './index.js',
     output: {
         filename: `./dist/${name}.min.js`,
         library: 'grapesjs-mjml', // name,
@@ -30,7 +30,7 @@ module.exports = (env = {}) => {
       loaders: [{
           test: /\.js$/,
           loader: 'babel-loader',
-          include: /src/,
+          exclude: /node_modules/
       }],
     },
     externals: { 'grapesjs': 'grapesjs' },

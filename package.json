@@ -1,6 +1,6 @@
 {
     "name": "demo-email-builder",
-    "version": "1.0.14",
+    "version": "1.2.2",
     "description": "MJML Componenets integration",
     "main": "dist/grapesjs-mjml.min.js",
     "scripts": {

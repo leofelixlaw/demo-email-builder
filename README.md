@@ -37,7 +37,7 @@ Supported components:
 ```html
 <link href="path/to/grapes.min.css" rel="stylesheet"/>
 <script src="path/to/grapes.min.js"></script>
-<script src="path/to/grapesjs-mjml.min.js"></script>
+<script src="path/to/demo-email-builder.min.js"></script>
 
 <div id="gjs">
   <!-- Your MJML body here -->
@@ -54,10 +54,7 @@ Supported components:
   var editor = grapesjs.init({
       fromElement: 1,
       container : '#gjs',
-      plugins: ['grapesjs-mjml'],
-      pluginsOpts: {
-        'grapesjs-mjml': {/* ...options */}
-      }
+      plugins: ['demo-email-builder']
   });
 </script>
 ```

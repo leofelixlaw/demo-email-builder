@@ -61,19 +61,19 @@ export default (editor, opts = {}) => {
     config.devicePreviewMode = 1;
 
     // Add Blocks
-    require('./blocks').default(editor, opt);
+    require('./src/blocks').default(editor, opt);
 
     // Add Components
-    require('./components').default(editor, opt);
+    require('./src/components').default(editor, opt);
 
     // Add Commands
-    require('./commands').default(editor, opt);
+    require('./src/commands').default(editor, opt);
 
     // Add Buttons
-    require('./buttons').default(editor, opt);
+    require('./src/buttons').default(editor, opt);
 
     // Extend Style Manager
-    require('./style').default(editor, opt);
+    require('./src/style').default(editor, opt);
 
     // Update devices
     if (opt.resetDevices) {
